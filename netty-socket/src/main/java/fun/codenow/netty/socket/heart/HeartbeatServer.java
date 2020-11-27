@@ -2,14 +2,13 @@ package fun.codenow.netty.socket.heart;
 
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.ChannelFuture;
-import io.netty.channel.ChannelInitializer;
+import io.netty.channel.EventLoopGroup;
 import io.netty.channel.nio.NioEventLoopGroup;
-import io.netty.channel.socket.SocketChannel;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
-import io.netty.handler.timeout.IdleStateHandler;
+import io.netty.handler.logging.LogLevel;
+import io.netty.handler.logging.LoggingHandler;
 
 import java.net.InetSocketAddress;
-import java.util.concurrent.TimeUnit;
 
 /**
  * @Author Jack Wu
@@ -18,27 +17,35 @@ import java.util.concurrent.TimeUnit;
  * @Date2020/11/26 17:58
  **/
 public class HeartbeatServer {
-    public static void main(String[] args) throws InterruptedException {
-        NioEventLoopGroup nioEventLoopGroup=new NioEventLoopGroup();
+    private int port;
+    private String host;
+    public HeartbeatServer(int port,String host){
+        this.port=port;
+        this.host=host;
+    }
+
+    public void run() throws InterruptedException {
         ServerBootstrap serverBootstrap=new ServerBootstrap();
+        EventLoopGroup bossEventLoopGroup=new NioEventLoopGroup();
+        EventLoopGroup workerEventLoopGroup=new NioEventLoopGroup();
         serverBootstrap
-                .group(nioEventLoopGroup)
+                .group(bossEventLoopGroup,workerEventLoopGroup)
                 .channel(NioServerSocketChannel.class)
-                .localAddress(new InetSocketAddress(12120))
-                .childHandler(new ChannelInitializer<SocketChannel>() {
-                    @Override
-                    protected void initChannel(SocketChannel socketChannel) throws Exception {
-                        socketChannel.pipeline().addLast(new IdleStateHandler(13,5,2, TimeUnit.SECONDS));
-                        socketChannel.pipeline().addLast(new CustomHeartBearhandler());
-                    }
-                });
+                .localAddress(new InetSocketAddress(port))
+                .handler(new LoggingHandler(LogLevel.INFO))
+                .childHandler(new CustomHeartBeatInitializer());
         try {
-            ChannelFuture channelFuture= serverBootstrap.bind().sync();
+            ChannelFuture channelFuture=serverBootstrap.bind().sync();
             channelFuture.channel().closeFuture().sync();
         } finally {
-            nioEventLoopGroup.shutdownGracefully().sync();
+            bossEventLoopGroup.shutdownGracefully();
+            workerEventLoopGroup.shutdownGracefully();
         }
 
 
+    }
+    public static void main(String[] args) throws InterruptedException {
+        HeartbeatServer heartbeatServer=new HeartbeatServer(8888,"localhost");
+        heartbeatServer.run();
     }
 }
