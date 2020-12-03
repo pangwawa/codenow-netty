@@ -5,24 +5,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="58497d24-db89-46ba-94c7-11dba00aacd5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/netty-socket/src/main/java/fun/codenow/netty/socket/protobuf/SubscribeReqProto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/netty-socket/src/main/java/fun/codenow/netty/socket/protobuf/SubscribeRespProto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/netty-socket/src/main/java/fun/codenow/netty/socket/subscribebook/SubscribeBookClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/netty-socket/src/main/java/fun/codenow/netty/socket/subscribebook/SubscribeBookClientHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/netty-socket/src/main/java/fun/codenow/netty/socket/subscribebook/SubscribeBookServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/netty-socket/src/main/java/fun/codenow/netty/socket/subscribebook/SubscribeBookServerHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/netty-socket/src/main/java/fun/codenow/netty/socket/timeserver/TimeClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/netty-socket/src/main/java/fun/codenow/netty/socket/timeserver/TimeClientHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/netty-socket/src/main/java/fun/codenow/netty/socket/timeserver/TimeServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/netty-socket/src/main/java/fun/codenow/netty/socket/timeserver/TimeServerHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/netty-socket/src/main/java/fun/codenow/netty/socket/timeserver/TimeServerInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/netty-private-protocol/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/netty-private-protocol/src/main/java/fun/codenow/netty/privateprotocol/NettyPrivateProtocolApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/netty-private-protocol/src/main/java/fun/codenow/netty/privateprotocol/client/ClientChannelInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/netty-private-protocol/src/main/java/fun/codenow/netty/privateprotocol/client/HeartBeatRequestHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/netty-private-protocol/src/main/java/fun/codenow/netty/privateprotocol/client/privateProtocoClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/netty-private-protocol/src/main/java/fun/codenow/netty/privateprotocol/codec/CustomDecode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/netty-private-protocol/src/main/java/fun/codenow/netty/privateprotocol/codec/CustomEncode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/netty-private-protocol/src/main/java/fun/codenow/netty/privateprotocol/server/HeartBeatResponseHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/netty-private-protocol/src/main/java/fun/codenow/netty/privateprotocol/server/PrivateProtocolServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/netty-private-protocol/src/main/java/fun/codenow/netty/privateprotocol/server/ServerChannelInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/netty-private-protocol/src/main/java/fun/codenow/netty/privateprotocol/struct/CustomHeader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/netty-private-protocol/src/main/java/fun/codenow/netty/privateprotocol/struct/CustomMessage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/netty-private-protocol/src/main/java/fun/codenow/netty/privateprotocol/struct/MessageType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/netty-private-protocol/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/netty-socket/src/main/java/fun/codenow/netty/socket/inaction/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/netty-socket/src/main/java/fun/codenow/netty/socket/inaction/ClientHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/netty-socket/src/main/java/fun/codenow/netty/socket/inaction/Server.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/netty-socket/src/main/java/fun/codenow/netty/socket/inaction/ServerHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/netty-socket/netty-socket.iml" beforeDir="false" afterPath="$PROJECT_DIR$/netty-socket/netty-socket.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/netty-socket/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/netty-socket/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/netty-socket/target/" />
+    <ignored path="$PROJECT_DIR$/netty-private-protocol/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,22 +44,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/netty-socket/src/main/java/fun/codenow/netty/socket/subscribebook/SubscribeBookClient.java">
+        <entry file="file://$PROJECT_DIR$/netty-private-protocol/src/main/java/fun/codenow/netty/privateprotocol/client/ClientChannelInitializer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="705">
-              <caret line="103" column="83" selection-start-line="103" selection-start-column="12" selection-end-line="103" selection-end-column="83" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/netty-socket/src/main/java/fun/codenow/netty/socket/subscribebook/SubscribeBookServer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
-              <caret line="45" column="13" lean-forward="true" selection-start-line="45" selection-start-column="13" selection-end-line="45" selection-end-column="13" />
+            <state relative-caret-position="361">
+              <caret line="19" column="45" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="45" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -59,10 +56,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/netty-socket/src/main/java/fun/codenow/netty/socket/subscribebook/SubscribeBookClientHandler.java">
+        <entry file="file://$PROJECT_DIR$/netty-private-protocol/src/main/java/fun/codenow/netty/privateprotocol/server/HeartBeatResponseHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="48" column="31" selection-start-line="48" selection-start-column="31" selection-end-line="48" selection-end-column="31" />
+            <state relative-caret-position="453">
+              <caret line="63" column="47" selection-start-line="63" selection-start-column="47" selection-end-line="63" selection-end-column="47" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -71,10 +68,85 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/netty-socket/src/main/java/fun/codenow/netty/socket/protobuf/SubscribeReqProto.java">
+        <entry file="file://$PROJECT_DIR$/netty-private-protocol/src/main/java/fun/codenow/netty/privateprotocol/server/ServerChannelInitializer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="513">
-              <caret line="612" column="22" lean-forward="true" selection-start-line="612" selection-start-column="22" selection-end-line="612" selection-end-column="22" />
+            <state relative-caret-position="361">
+              <caret line="19" column="47" selection-start-line="19" selection-start-column="46" selection-end-line="19" selection-end-column="47" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/netty-private-protocol/src/main/java/fun/codenow/netty/privateprotocol/server/PrivateProtocolServer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="472">
+              <caret line="32" column="46" selection-start-line="32" selection-start-column="46" selection-end-line="32" selection-end-column="46" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/netty-private-protocol/src/main/java/fun/codenow/netty/privateprotocol/client/HeartBeatRequestHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="228">
+              <caret line="21" column="31" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="31" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/netty-private-protocol/src/main/java/fun/codenow/netty/privateprotocol/client/privateProtocoClient.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="399">
+              <caret line="24" column="42" selection-start-line="24" selection-start-column="42" selection-end-line="24" selection-end-column="42" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/netty-socket/src/main/java/fun/codenow/netty/socket/heart/CustomHeartBeatClientHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="190">
+              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/netty-socket/src/main/java/fun/codenow/netty/socket/heart/CustomHeartbeatClientInitializer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="190">
+              <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/netty-socket/src/main/java/fun/codenow/netty/socket/heart/CustomHeartBeathandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="437">
+              <caret line="40" column="37" lean-forward="true" selection-start-line="40" selection-start-column="37" selection-end-line="40" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/netty-socket/src/main/java/fun/codenow/netty/socket/heartbeat/HeartbeatInitializer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="19" column="54" lean-forward="true" selection-start-line="19" selection-start-column="54" selection-end-line="19" selection-end-column="54" />
             </state>
           </provider>
         </entry>
@@ -98,6 +170,7 @@
       <find>channelA</find>
       <find>exceptionC</find>
       <find>comple</find>
+      <find>read</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -106,33 +179,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/netty-socket/src/main/java/fun/codenow/netty/socket/NettySocketApplication.java" />
-        <option value="$PROJECT_DIR$/netty-socket/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/netty-socket/src/main/java/fun/codenow/netty/socket/demo/EchoServerHandler.java" />
-        <option value="$PROJECT_DIR$/netty-socket/src/main/java/fun/codenow/netty/socket/demo/EchoClientHandler.java" />
-        <option value="$PROJECT_DIR$/netty-socket/src/main/java/fun/codenow/netty/socket/demo/EchoClient.java" />
-        <option value="$PROJECT_DIR$/netty-socket/src/main/java/fun/codenow/netty/socket/demo/EchoServer.java" />
-        <option value="$PROJECT_DIR$/netty-socket/src/main/java/fun/codenow/netty/socket/test/EchoServerTest.java" />
-        <option value="$PROJECT_DIR$/netty-socket/src/main/java/fun/codenow/netty/socket/test/EchoClientTest.java" />
-        <option value="$PROJECT_DIR$/netty-socket/src/main/java/fun/codenow/netty/socket/test2/EchoServerTest2.java" />
-        <option value="$PROJECT_DIR$/netty-socket/src/main/java/fun/codenow/netty/socket/test2/EchoServer2ChannelHanlder.java" />
-        <option value="$PROJECT_DIR$/netty-socket/src/main/java/fun/codenow/netty/socket/test2/EchoClientTest2ChannelHandler.java" />
-        <option value="$PROJECT_DIR$/netty-socket/src/main/java/fun/codenow/netty/socket/test2/EchoClientTest2.java" />
-        <option value="$PROJECT_DIR$/netty-socket/src/main/java/fun/codenow/netty/socket/heart/CustomHeartBearhandler.java" />
-        <option value="$PROJECT_DIR$/netty-socket/src/main/java/fun/codenow/netty/socket/heart/HeartbeatServer.java" />
-        <option value="$PROJECT_DIR$/netty-socket/src/main/java/fun/codenow/netty/socket/heart/HeartbeatClientInitializer.java" />
-        <option value="$PROJECT_DIR$/netty-socket/src/main/java/fun/codenow/netty/socket/heart/CustomHeartBeatInitializer.java" />
-        <option value="$PROJECT_DIR$/netty-socket/src/main/java/fun/codenow/netty/socket/heart/CustomHeartBeatClientHandler.java" />
-        <option value="$PROJECT_DIR$/netty-socket/src/main/java/fun/codenow/netty/socket/heart/CustomHeartbeatClientInitializer.java" />
-        <option value="$PROJECT_DIR$/netty-socket/src/main/java/fun/codenow/netty/socket/heart/HeartbeatClient.java" />
-        <option value="$PROJECT_DIR$/netty-socket/src/main/java/fun/codenow/netty/socket/heart/CustomHeartBeathandler.java" />
-        <option value="$PROJECT_DIR$/netty-socket/src/main/java/fun/codenow/netty/socket/heartbeat/HeartbeatInitializer.java" />
-        <option value="$PROJECT_DIR$/netty-socket/src/main/java/fun/codenow/netty/socket/heartbeat/HeartBeatServer.java" />
-        <option value="$PROJECT_DIR$/netty-socket/src/main/java/fun/codenow/netty/socket/heartbeat/CustomProtocol.java" />
-        <option value="$PROJECT_DIR$/netty-socket/src/main/java/fun/codenow/netty/socket/heartbeat/HeartbeatEncode.java" />
-        <option value="$PROJECT_DIR$/netty-socket/src/main/java/fun/codenow/netty/socket/heartbeat/HeartbeatDecoder.java" />
-        <option value="$PROJECT_DIR$/netty-socket/src/main/java/fun/codenow/netty/socket/heartbeat/client/CustomerHandleInitializer.java" />
-        <option value="$PROJECT_DIR$/netty-socket/src/main/java/fun/codenow/netty/socket/heartbeat/NettySocketHolder.java" />
         <option value="$PROJECT_DIR$/netty-socket/src/main/java/fun/codenow/netty/socket/heartbeat/HeartBeatSimpleHandle.java" />
         <option value="$PROJECT_DIR$/netty-socket/src/main/java/fun/codenow/netty/socket/heartbeat/client/EchoClientHandle.java" />
         <option value="$PROJECT_DIR$/netty-socket/src/main/java/fun/codenow/netty/socket/heartbeat/util/SpringBeanFactory.java" />
@@ -154,6 +200,36 @@
         <option value="$PROJECT_DIR$/netty-socket/src/main/java/fun/codenow/netty/socket/subscribebook/SubscribeBookServerHandler.java" />
         <option value="$PROJECT_DIR$/netty-socket/src/main/java/fun/codenow/netty/socket/subscribebook/SubscribeBookClient.java" />
         <option value="$PROJECT_DIR$/netty-socket/src/main/java/fun/codenow/netty/socket/subscribebook/SubscribeBookClientHandler.java" />
+        <option value="$PROJECT_DIR$/netty-private-protocol/src/main/java/fun/codenow/netty/privateprotocol/NettyPrivateProtocolApplication.java" />
+        <option value="$PROJECT_DIR$/netty-private-protocol/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/netty-private-protocol/src/main/java/fun/codenow/netty/privateprotocol/domain/CustomHeader.java" />
+        <option value="$PROJECT_DIR$/netty-private-protocol/src/main/java/fun/codenow/netty/privateprotocol/domain/CustomMessage.java" />
+        <option value="$PROJECT_DIR$/netty-private-protocol/src/main/java/fun/codenow/netty/privateprotocol/struct/CustomHeader.java" />
+        <option value="$PROJECT_DIR$/netty-private-protocol/src/main/java/fun/codenow/netty/privateprotocol/struct/CustomMessage.java" />
+        <option value="$PROJECT_DIR$/netty-private-protocol/src/main/java/fun/codenow/netty/privateprotocol/heartbeat/HeartBeatRequestHandler.java" />
+        <option value="$PROJECT_DIR$/netty-private-protocol/src/main/java/fun/codenow/netty/privateprotocol/constant/NettyConstant.java" />
+        <option value="$PROJECT_DIR$/netty-private-protocol/src/main/java/fun/codenow/netty/privateprotocol/codec/MarshallingEncoder.java" />
+        <option value="$PROJECT_DIR$/netty-private-protocol/pom.xml" />
+        <option value="$PROJECT_DIR$/netty-private-protocol/src/main/java/fun/codenow/netty/privateprotocol/codec/MarshallingCodecFactory.java" />
+        <option value="$PROJECT_DIR$/netty-private-protocol/src/main/java/fun/codenow/netty/privateprotocol/codec/ChannelBufferByteOutput.java" />
+        <option value="$PROJECT_DIR$/netty-private-protocol/src/main/java/fun/codenow/netty/privateprotocol/codec/MessageEncoder.java" />
+        <option value="$PROJECT_DIR$/netty-private-protocol/src/main/java/fun/codenow/netty/privateprotocol/codec/MessageDecoder.java" />
+        <option value="$PROJECT_DIR$/netty-private-protocol/src/main/java/fun/codenow/netty/privateprotocol/constant/MessageType.java" />
+        <option value="$PROJECT_DIR$/netty-private-protocol/src/main/java/fun/codenow/netty/privateprotocol/server/NettyServer.java" />
+        <option value="$PROJECT_DIR$/netty-private-protocol/src/main/java/fun/codenow/netty/privateprotocol/client/NettyClient.java" />
+        <option value="$PROJECT_DIR$/netty-socket/src/main/java/fun/codenow/netty/socket/inaction/Client.java" />
+        <option value="$PROJECT_DIR$/netty-socket/src/main/java/fun/codenow/netty/socket/inaction/Server.java" />
+        <option value="$PROJECT_DIR$/netty-socket/src/main/java/fun/codenow/netty/socket/inaction/ClientHandler.java" />
+        <option value="$PROJECT_DIR$/netty-socket/src/main/java/fun/codenow/netty/socket/inaction/ServerHandler.java" />
+        <option value="$PROJECT_DIR$/netty-private-protocol/src/main/java/fun/codenow/netty/privateprotocol/struct/NettyConstant.java" />
+        <option value="$PROJECT_DIR$/netty-private-protocol/src/main/java/fun/codenow/netty/privateprotocol/struct/MessageType.java" />
+        <option value="$PROJECT_DIR$/netty-private-protocol/src/main/java/fun/codenow/netty/privateprotocol/server/HeartBeatServerHandler.java" />
+        <option value="$PROJECT_DIR$/netty-private-protocol/src/main/java/fun/codenow/netty/privateprotocol/server/PrivateProtocolServer.java" />
+        <option value="$PROJECT_DIR$/netty-private-protocol/src/main/java/fun/codenow/netty/privateprotocol/client/privateProtocoClient.java" />
+        <option value="$PROJECT_DIR$/netty-private-protocol/src/main/java/fun/codenow/netty/privateprotocol/client/ClientChannelInitializer.java" />
+        <option value="$PROJECT_DIR$/netty-private-protocol/src/main/java/fun/codenow/netty/privateprotocol/client/HeartBeatRequestHandler.java" />
+        <option value="$PROJECT_DIR$/netty-private-protocol/src/main/java/fun/codenow/netty/privateprotocol/server/ServerChannelInitializer.java" />
+        <option value="$PROJECT_DIR$/netty-private-protocol/src/main/java/fun/codenow/netty/privateprotocol/server/HeartBeatResponseHandler.java" />
       </list>
     </option>
   </component>
@@ -181,7 +257,7 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-1928" />
+    <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1936" />
     <option name="height" value="1056" />
@@ -191,7 +267,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -202,6 +277,61 @@
             <path>
               <item name="codenow-netty" type="b2602c69:ProjectViewProjectNode" />
               <item name="codenow-netty" type="462c0819:PsiDirectoryNode" />
+              <item name="netty-private-protocol" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="codenow-netty" type="b2602c69:ProjectViewProjectNode" />
+              <item name="codenow-netty" type="462c0819:PsiDirectoryNode" />
+              <item name="netty-private-protocol" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="codenow-netty" type="b2602c69:ProjectViewProjectNode" />
+              <item name="codenow-netty" type="462c0819:PsiDirectoryNode" />
+              <item name="netty-private-protocol" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="codenow-netty" type="b2602c69:ProjectViewProjectNode" />
+              <item name="codenow-netty" type="462c0819:PsiDirectoryNode" />
+              <item name="netty-private-protocol" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="codenow-netty" type="b2602c69:ProjectViewProjectNode" />
+              <item name="codenow-netty" type="462c0819:PsiDirectoryNode" />
+              <item name="netty-private-protocol" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="privateprotocol" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="codenow-netty" type="b2602c69:ProjectViewProjectNode" />
+              <item name="codenow-netty" type="462c0819:PsiDirectoryNode" />
+              <item name="netty-private-protocol" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="privateprotocol" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="codenow-netty" type="b2602c69:ProjectViewProjectNode" />
+              <item name="codenow-netty" type="462c0819:PsiDirectoryNode" />
+              <item name="netty-private-protocol" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="privateprotocol" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="codenow-netty" type="b2602c69:ProjectViewProjectNode" />
+              <item name="codenow-netty" type="462c0819:PsiDirectoryNode" />
               <item name="netty-socket" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -242,22 +372,13 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="socket" type="462c0819:PsiDirectoryNode" />
-              <item name="protobuf" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="codenow-netty" type="b2602c69:ProjectViewProjectNode" />
-              <item name="codenow-netty" type="462c0819:PsiDirectoryNode" />
-              <item name="netty-socket" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="socket" type="462c0819:PsiDirectoryNode" />
-              <item name="subscribebook" type="462c0819:PsiDirectoryNode" />
+              <item name="heart" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -269,7 +390,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/netty-socket/src/main/java/fun/codenow/netty/socket/protobuf" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/netty-private-protocol/src/main/java/fun/codenow/netty/privateprotocol/codec" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Project" />
@@ -279,13 +400,16 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="fun.codenow.netty.privateprotocol.struct" />
+      <recent name="fun.codenow.netty.privateprotocol.codec" />
       <recent name="fun.codenow.netty.socket.demo" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\esunproject\me\codenow-netty\netty-private-protocol\src\main\java\fun\codenow\netty\privateprotocol\codec" />
+      <recent name="D:\esunproject\me\codenow-netty\netty-private-protocol\src\main\java\fun\codenow\netty\privateprotocol\constant" />
+      <recent name="D:\esunproject\me\codenow-netty\netty-private-protocol\src\main\resources" />
       <recent name="D:\esunproject\me\codenow-netty\netty-socket\src\main\java\fun\codenow\netty\socket\protobuf" />
       <recent name="D:\esunproject\me\codenow-netty\netty-socket\src\main\java\fun\codenow\netty\socket" />
-      <recent name="D:\esunproject\me\codenow-netty\netty-socket\src\main\java\fun\codenow\netty\socket\coder\protobuf\entity" />
-      <recent name="D:\esunproject\me\codenow-netty" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -300,13 +424,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.SubscribeBookClient">
-    <configuration name="EchoClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="fun.codenow.netty.socket.demo.EchoClient" />
+  <component name="RunManager" selected="Application.privateProtocoClient">
+    <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="fun.codenow.netty.socket.inaction.Client" />
       <module name="netty-socket" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="fun.codenow.netty.socket.demo.*" />
+          <option name="PATTERN" value="fun.codenow.netty.socket.inaction.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -314,12 +438,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SubscribeBookClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="fun.codenow.netty.socket.subscribebook.SubscribeBookClient" />
-      <module name="netty-socket" />
+    <configuration name="NettyClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="fun.codenow.netty.privateprotocol.client.NettyClient" />
+      <module name="netty-private-protocol" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="fun.codenow.netty.socket.subscribebook.*" />
+          <option name="PATTERN" value="fun.codenow.netty.privateprotocol.client.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -327,12 +451,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SubscribeBookServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="fun.codenow.netty.socket.subscribebook.SubscribeBookServer" />
-      <module name="netty-socket" />
+    <configuration name="PrivateProtocolServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="fun.codenow.netty.privateprotocol.server.PrivateProtocolServer" />
+      <module name="netty-private-protocol" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="fun.codenow.netty.socket.subscribebook.*" />
+          <option name="PATTERN" value="fun.codenow.netty.privateprotocol.server.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -340,12 +464,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TimeClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="fun.codenow.netty.socket.timeserver.TimeClient" />
+    <configuration name="Server" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="fun.codenow.netty.socket.inaction.Server" />
       <module name="netty-socket" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="fun.codenow.netty.socket.timeserver.*" />
+          <option name="PATTERN" value="fun.codenow.netty.socket.inaction.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -353,26 +477,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TimeServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="fun.codenow.netty.socket.timeserver.TimeServer" />
-      <module name="netty-socket" />
+    <configuration name="privateProtocoClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="fun.codenow.netty.privateprotocol.client.privateProtocoClient" />
+      <module name="netty-private-protocol" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="fun.codenow.netty.socket.timeserver.*" />
+          <option name="PATTERN" value="fun.codenow.netty.privateprotocol.client.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NettySocketApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="netty-socket" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="fun.codenow.netty.socket.NettySocketApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.SubscribeBookClient" />
-        <item itemvalue="Application.SubscribeBookServer" />
-        <item itemvalue="Application.TimeClient" />
-        <item itemvalue="Application.TimeServer" />
-        <item itemvalue="Application.EchoClient" />
+        <item itemvalue="Application.privateProtocoClient" />
+        <item itemvalue="Application.PrivateProtocolServer" />
+        <item itemvalue="Application.Server" />
+        <item itemvalue="Application.Client" />
+        <item itemvalue="Application.NettyClient" />
       </list>
     </recent_temporary>
   </component>
@@ -392,18 +523,20 @@
       <workItem from="1606439483945" duration="13701000" />
       <workItem from="1606698497173" duration="2387000" />
       <workItem from="1606785027159" duration="13964000" />
-      <workItem from="1606871647545" duration="12932000" />
+      <workItem from="1606871647545" duration="13044000" />
+      <workItem from="1606958233512" duration="26600000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="75444000" />
+    <option name="totallyTimeSpent" value="102156000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1928" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20255864" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.83261186" visible="true" weight="0.20469083" />
+      <window_info id="Structure" order="1" sideWeight="0.16738817" side_tool="true" visible="true" weight="0.20469083" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Capture Tool" order="4" />
@@ -412,7 +545,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2483731" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.2483731" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -441,201 +574,154 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/netty-socket/src/main/java/fun/codenow/netty/socket/test2/EchoClientTest2.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.54.Final/netty-all-4.1.54.Final.jar!/io/netty/handler/codec/MessageToMessageEncoder.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="21" column="45" selection-start-line="21" selection-start-column="45" selection-end-line="21" selection-end-column="45" />
+        <state relative-caret-position="-171">
+          <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/netty-socket/src/main/java/fun/codenow/netty/socket/subscribebook/SubscribeBookClientHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/netty-socket/src/main/java/fun/codenow/netty/socket/demo/EchoClientHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="397">
-          <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/netty-socket/src/main/java/fun/codenow/netty/socket/heart/CustomHeartBeathandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="21" column="70" selection-start-line="21" selection-start-column="70" selection-end-line="21" selection-end-column="70" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/netty-socket/src/main/java/fun/codenow/netty/socket/heart/HeartbeatServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="549">
-          <caret line="40" column="52" lean-forward="true" selection-start-line="40" selection-start-column="52" selection-end-line="40" selection-end-column="52" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/netty-socket/src/main/java/fun/codenow/netty/socket/heart/HeartbeatClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="22" column="23" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/netty-socket/src/main/java/fun/codenow/netty/socket/heart/CustomHeartBeatInitializer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/netty-socket/src/main/java/fun/codenow/netty/socket/heart/CustomHeartbeatClientInitializer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="27" column="44" selection-start-line="27" selection-start-column="38" selection-end-line="27" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/netty-socket/src/main/java/fun/codenow/netty/socket/heart/CustomHeartBeatClientHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/netty-socket/src/main/java/fun/codenow/netty/socket/heartbeat/CustomProtocol.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="26" column="5" lean-forward="true" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
-          <folding>
-            <element signature="e#362#363#0" expanded="true" />
-            <element signature="e#387#388#0" expanded="true" />
-            <element signature="e#421#422#0" expanded="true" />
-            <element signature="e#449#450#0" expanded="true" />
-            <element signature="e#483#484#0" expanded="true" />
-            <element signature="e#513#514#0" expanded="true" />
-            <element signature="e#559#560#0" expanded="true" />
-            <element signature="e#597#598#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/netty-socket/src/main/java/fun/codenow/netty/socket/heartbeat/HeartbeatDecoder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="26" column="5" lean-forward="true" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/netty-socket/src/main/java/fun/codenow/netty/socket/heartbeat/HeartbeatEncode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" column="51" lean-forward="true" selection-start-line="15" selection-start-column="51" selection-end-line="15" selection-end-column="51" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/netty-socket/src/main/java/fun/codenow/netty/socket/heartbeat/HeartbeatInitializer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="43" lean-forward="true" selection-start-column="43" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/netty-socket/src/main/java/fun/codenow/netty/socket/heartbeat/NettySocketHolder.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.54.Final/netty-all-4.1.54.Final.jar!/io/netty/channel/ChannelHandler.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
-          <caret line="12" column="30" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="30" />
+          <caret line="20" column="15" lean-forward="true" selection-start-line="20" selection-start-column="15" selection-end-line="20" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.54.Final/netty-all-4.1.54.Final.jar!/io/netty/channel/ChannelInboundHandler.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.54.Final/netty-all-4.1.54.Final.jar!/io/netty/channel/SimpleChannelInboundHandler.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="10" column="72" selection-start-line="10" selection-start-column="61" selection-end-line="10" selection-end-column="89" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.54.Final/netty-all-4.1.54.Final.jar!/io/netty/channel/ChannelHandlerAdapter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-202">
+          <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.54.Final/netty-all-4.1.54.Final.jar!/io/netty/channel/ChannelInboundHandlerAdapter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="34" column="27" selection-start-line="34" selection-start-column="16" selection-end-line="34" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/netty-private-protocol/src/main/java/fun/codenow/netty/privateprotocol/codec/ChannelBufferByteInput.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="25" column="6" selection-start-line="25" selection-start-column="6" selection-end-line="25" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/netty-private-protocol/src/main/java/fun/codenow/netty/privateprotocol/codec/ChannelBufferByteOutput.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="27" column="6" selection-start-line="27" selection-start-column="6" selection-end-line="27" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/netty-private-protocol/src/main/java/fun/codenow/netty/privateprotocol/codec/MarshallingCodecFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="26" column="19" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/netty-private-protocol/src/main/java/fun/codenow/netty/privateprotocol/codec/MarshallingEncoder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="37" selection-start-line="37" selection-end-line="37" />
+          <folding>
+            <element signature="e#0#1563#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/netty-private-protocol/src/main/java/fun/codenow/netty/privateprotocol/codec/MessageEncoder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="358">
+          <caret line="51" column="24" lean-forward="true" selection-start-line="51" selection-start-column="24" selection-end-line="51" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/netty-socket/src/main/java/fun/codenow/netty/socket/heartbeat/util/SpringBeanFactory.java">
+    <entry file="file://$PROJECT_DIR$/netty-private-protocol/src/main/java/fun/codenow/netty/privateprotocol/codec/MessageDecoder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-269">
+          <caret line="25" column="47" selection-start-line="25" selection-start-column="47" selection-end-line="25" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/netty-private-protocol/src/main/java/fun/codenow/netty/privateprotocol/codec/MarshallingDecoder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="263">
+          <caret line="46" column="34" lean-forward="true" selection-start-line="46" selection-start-column="34" selection-end-line="46" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/netty-private-protocol/src/main/java/fun/codenow/netty/privateprotocol/constant/NettyConstant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="25" column="28" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/netty-private-protocol/src/main/java/fun/codenow/netty/privateprotocol/constant/MessageType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/netty-socket/src/main/java/fun/codenow/netty/socket/test/EchoServerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="529">
+          <caret line="60" lean-forward="true" selection-start-line="60" selection-end-line="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/netty-private-protocol/src/main/java/fun/codenow/netty/privateprotocol/server/HeartBeatResponseHandler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="320">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#519#520#0" expanded="true" />
-            <element signature="e#560#561#0" expanded="true" />
-            <element signature="e#623#624#0" expanded="true" />
-            <element signature="e#673#674#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/netty-socket/src/main/java/fun/codenow/netty/socket/heartbeat/HeartBeatSimpleHandle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="29" column="5" selection-start-line="27" selection-start-column="76" selection-end-line="29" selection-end-column="5" />
+          <caret line="29" column="9" lean-forward="true" selection-start-line="29" selection-start-column="9" selection-end-line="29" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/netty-socket/src/main/java/fun/codenow/netty/socket/heartbeat/client/HeartbeatClient.java">
+    <entry file="file://$PROJECT_DIR$/netty-private-protocol/src/main/java/fun/codenow/netty/privateprotocol/server/NettyServer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="404">
-          <caret line="31" column="36" selection-start-line="31" selection-start-column="36" selection-end-line="31" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/netty-socket/src/main/java/fun/codenow/netty/socket/heartbeat/client/CustomerHandleInitializer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="20" column="37" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/netty-socket/src/main/java/fun/codenow/netty/socket/heartbeat/client/EchoClientHandle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="461">
-          <caret line="42" column="13" lean-forward="true" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/netty-socket/src/main/java/fun/codenow/netty/socket/test/EchoClientTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="28" column="40" lean-forward="true" selection-start-line="28" selection-start-column="40" selection-end-line="28" selection-end-column="40" />
+        <state relative-caret-position="472">
+          <caret line="49" column="44" selection-start-line="49" selection-start-column="44" selection-end-line="49" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -644,254 +730,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/netty-socket/src/main/java/fun/codenow/netty/socket/demo/EchoClient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="454">
-          <caret line="50" column="50" selection-start-line="50" selection-start-column="50" selection-end-line="50" selection-end-column="50" />
+        <state relative-caret-position="-2">
+          <caret line="22" column="2" lean-forward="true" selection-start-line="22" selection-start-column="2" selection-end-line="22" selection-end-column="2" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/netty-socket/src/main/java/fun/codenow/netty/socket/heartbeat/HeartBeatServer.java">
+    <entry file="file://$PROJECT_DIR$/netty-private-protocol/src/main/java/fun/codenow/netty/privateprotocol/client/NettyClient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
-          <caret line="52" selection-start-line="52" selection-end-line="52" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/netty-socket/netty-socket.iml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/netty-socket/src/main/java/fun/codenow/netty/socket/demo/WebSocketServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3">
-          <caret line="22" column="6" lean-forward="true" selection-start-line="22" selection-start-column="6" selection-end-line="22" selection-end-column="6" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/netty-socket/src/main/java/fun/codenow/netty/socket/demo/EchoServerHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="421">
-          <caret line="34" column="16" lean-forward="true" selection-start-line="34" selection-start-column="16" selection-end-line="34" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#938#939#0" expanded="true" />
-            <element signature="e#961#962#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/netty-socket/src/main/java/fun/codenow/netty/socket/demo/EchoServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="587">
-          <caret line="59" column="42" lean-forward="true" selection-start-line="59" selection-start-column="42" selection-end-line="59" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1229#1554#0" expanded="true" />
-            <element signature="e#1553#1554#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/netty-socket/src/main/java/fun/codenow/netty/socket/protocol/custom/CustomProtocolServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/netty-socket/src/main/java/fun/codenow/netty/socket/protocol/websocket/WebSocketNettyServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/netty-socket/src/main/java/fun/codenow/netty/socket/timeserver/TimeServerInitializer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/netty-socket/src/main/java/fun/codenow/netty/socket/timeserver/TimeServerHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="7" column="3" lean-forward="true" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#333#334#0" expanded="true" />
-            <element signature="e#356#357#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/netty-socket/src/main/java/fun/codenow/netty/socket/timeserver/TimeServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="26" column="75" selection-start-line="26" selection-start-column="12" selection-end-line="26" selection-end-column="75" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/netty-socket/src/main/java/fun/codenow/netty/socket/timeserver/TimeClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="339">
-          <caret line="28" column="80" selection-start-line="28" selection-start-column="80" selection-end-line="28" selection-end-column="80" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/netty-socket/src/main/java/fun/codenow/netty/socket/timeserver/TimeClientHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="65" column="45" selection-start-line="65" selection-start-column="45" selection-end-line="65" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/netty-socket/src/main/java/fun/codenow/netty/socket/NettySocketApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#346#347#0" expanded="true" />
-            <element signature="e#413#414#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/netty-socket/src/main/java/fun/codenow/netty/socket/protocol/http/HttpNettyServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/netty-socket/src/main/java/fun/codenow/netty/socket/coder/protobuf/ClientOne.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="567">
-          <caret line="245" column="25" selection-start-line="245" selection-start-column="25" selection-end-line="245" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/netty-socket/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="53" column="50" selection-start-line="53" selection-start-column="50" selection-end-line="53" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/netty-socket/src/main/java/fun/codenow/netty/socket/coder/protobuf/entity/UserInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="169" column="46" selection-start-line="169" selection-start-column="46" selection-end-line="169" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/netty-socket/src/main/java/fun/codenow/netty/socket/protobuf/UserInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="922" column="1" lean-forward="true" selection-start-line="922" selection-start-column="1" selection-end-line="922" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/netty-socket/src/main/java/fun/codenow/netty/socket/protobuf/SubscribeRespProto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="33" column="36" lean-forward="true" selection-start-line="33" selection-start-column="36" selection-end-line="33" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/netty-socket/src/main/java/fun/codenow/netty/socket/coder/protobuf/ServerOne.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="401">
-          <caret line="27" column="48" selection-start-line="27" selection-start-column="48" selection-end-line="27" selection-end-column="48" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/netty-socket/src/main/java/fun/codenow/netty/socket/subscribebook/SubscribeBookServerHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
-          <caret line="21" column="70" selection-start-line="21" selection-start-column="70" selection-end-line="21" selection-end-column="70" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/google/protobuf/protobuf-java/3.14.0/protobuf-java-3.14.0.jar!/com/google/protobuf/MessageLite.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.54.Final/netty-all-4.1.54.Final.jar!/io/netty/handler/codec/protobuf/ProtobufDecoder.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="25" column="49" lean-forward="true" selection-start-line="25" selection-start-column="49" selection-end-line="25" selection-end-column="49" />
-          <folding>
-            <element signature="e#847#848#0" expanded="true" />
-            <element signature="e#903#904#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.54.Final/netty-all-4.1.54.Final.jar!/io/netty/channel/SimpleChannelInboundHandler.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="10" column="76" lean-forward="true" selection-start-line="10" selection-start-column="76" selection-end-line="10" selection-end-column="76" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.54.Final/netty-all-4.1.54.Final.jar!/io/netty/channel/ChannelInboundHandlerAdapter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="41" column="5" lean-forward="true" selection-start-line="39" selection-start-column="3" selection-end-line="41" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/netty-socket/src/main/java/fun/codenow/netty/socket/protobuf/SubscribeReqProto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="612" column="22" lean-forward="true" selection-start-line="612" selection-start-column="22" selection-end-line="612" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/netty-socket/src/main/java/fun/codenow/netty/socket/subscribebook/SubscribeBookServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="45" column="13" lean-forward="true" selection-start-line="45" selection-start-column="13" selection-end-line="45" selection-end-column="13" />
+        <state relative-caret-position="491">
+          <caret line="75" column="9" lean-forward="true" selection-start-line="75" selection-start-column="9" selection-end-line="75" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -900,18 +750,252 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/netty-socket/src/main/java/fun/codenow/netty/socket/subscribebook/SubscribeBookClient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="705">
-          <caret line="103" column="83" selection-start-line="103" selection-start-column="12" selection-end-line="103" selection-end-column="83" />
+        <state relative-caret-position="472">
+          <caret line="104" column="30" lean-forward="true" selection-start-line="104" selection-start-column="30" selection-end-line="104" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/netty-socket/src/main/java/fun/codenow/netty/socket/subscribebook/SubscribeBookClientHandler.java">
+    <entry file="file://$PROJECT_DIR$/netty-socket/src/main/java/fun/codenow/netty/socket/subscribebook/SubscribeBookServer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="48" column="31" selection-start-line="48" selection-start-column="31" selection-end-line="48" selection-end-column="31" />
+        <state relative-caret-position="263">
+          <caret line="39" column="40" selection-start-line="39" selection-start-column="40" selection-end-line="39" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/netty-socket/src/main/java/fun/codenow/netty/socket/demo/EchoClientHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="415">
+          <caret line="40" column="5" lean-forward="true" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/netty-socket/src/main/java/fun/codenow/netty/socket/inaction/Server.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="477">
+          <caret line="28" column="56" selection-start-line="28" selection-start-column="52" selection-end-line="28" selection-end-column="56" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/netty-socket/src/main/java/fun/codenow/netty/socket/inaction/Client.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="401">
+          <caret line="33" column="39" selection-start-line="33" selection-start-column="26" selection-end-line="33" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/netty-private-protocol/src/main/java/fun/codenow/netty/privateprotocol/NettyPrivateProtocolApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#362#363#0" expanded="true" />
+            <element signature="e#438#439#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/netty-private-protocol/src/main/java/fun/codenow/netty/privateprotocol/struct/NettyConstant.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/netty-private-protocol/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="55" selection-start-line="11" selection-start-column="51" selection-end-line="11" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/netty-private-protocol/src/main/java/fun/codenow/netty/privateprotocol/struct/MessageType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="22" column="12" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/netty-private-protocol/src/main/java/fun/codenow/netty/privateprotocol/struct/CustomMessage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="35" selection-start-line="9" selection-end-line="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/netty-socket/src/main/java/fun/codenow/netty/socket/demo/EchoServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="358">
+          <caret line="55" column="13" lean-forward="true" selection-start-line="55" selection-start-column="13" selection-end-line="55" selection-end-column="13" />
+          <folding>
+            <element signature="e#1229#1554#0" expanded="true" />
+            <element signature="e#1553#1554#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/netty-private-protocol/src/main/java/fun/codenow/netty/privateprotocol/struct/CustomHeader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="874">
+          <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/netty-socket/src/main/java/fun/codenow/netty/socket/inaction/ClientHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="51" column="47" lean-forward="true" selection-start-line="51" selection-start-column="7" selection-end-line="51" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/netty-socket/src/main/java/fun/codenow/netty/socket/inaction/ServerHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="46" column="39" lean-forward="true" selection-start-line="46" selection-start-column="39" selection-end-line="46" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/netty-private-protocol/src/main/java/fun/codenow/netty/privateprotocol/codec/CustomDecode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="25" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/netty-private-protocol/src/main/java/fun/codenow/netty/privateprotocol/codec/CustomEncode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="25" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.54.Final/netty-all-4.1.54.Final.jar!/io/netty/util/concurrent/EventExecutorGroup.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="387">
+          <caret line="42" column="35" selection-start-line="42" selection-start-column="27" selection-end-line="42" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.54.Final/netty-all-4.1.54.Final.jar!/io/netty/channel/pool/FixedChannelPool.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="337" column="38" selection-start-line="337" selection-start-column="27" selection-end-line="337" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/jdk/src.zip!/java/util/concurrent/ScheduledExecutorService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="109" column="47" selection-start-line="109" selection-start-column="39" selection-end-line="109" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/netty-socket/src/main/java/fun/codenow/netty/socket/heartbeat/HeartBeatServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="488">
+          <caret line="37" column="43" selection-start-line="37" selection-start-column="43" selection-end-line="37" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/netty-socket/src/main/java/fun/codenow/netty/socket/heartbeat/HeartbeatInitializer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="54" lean-forward="true" selection-start-line="19" selection-start-column="54" selection-end-line="19" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/netty-socket/src/main/java/fun/codenow/netty/socket/heart/CustomHeartBeatClientHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/netty-socket/src/main/java/fun/codenow/netty/socket/heart/CustomHeartbeatClientInitializer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/netty-socket/src/main/java/fun/codenow/netty/socket/heart/CustomHeartBeathandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="40" column="37" lean-forward="true" selection-start-line="40" selection-start-column="37" selection-end-line="40" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/netty-private-protocol/src/main/java/fun/codenow/netty/privateprotocol/client/privateProtocoClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="24" column="42" selection-start-line="24" selection-start-column="42" selection-end-line="24" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/netty-private-protocol/src/main/java/fun/codenow/netty/privateprotocol/client/ClientChannelInitializer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="19" column="45" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/netty-private-protocol/src/main/java/fun/codenow/netty/privateprotocol/server/PrivateProtocolServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="472">
+          <caret line="32" column="46" selection-start-line="32" selection-start-column="46" selection-end-line="32" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/netty-private-protocol/src/main/java/fun/codenow/netty/privateprotocol/server/ServerChannelInitializer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="19" column="47" selection-start-line="19" selection-start-column="46" selection-end-line="19" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/netty-private-protocol/src/main/java/fun/codenow/netty/privateprotocol/client/HeartBeatRequestHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="21" column="31" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/netty-private-protocol/src/main/java/fun/codenow/netty/privateprotocol/server/HeartBeatResponseHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="453">
+          <caret line="63" column="47" selection-start-line="63" selection-start-column="47" selection-end-line="63" selection-end-column="47" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
