@@ -4,6 +4,7 @@ import io.netty.buffer.ByteBuf;
 import io.netty.buffer.Unpooled;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.ChannelInboundHandlerAdapter;
+import io.netty.handler.timeout.IdleStateEvent;
 import lombok.extern.slf4j.Slf4j;
 
 /**
@@ -57,11 +58,16 @@ public class HeartBeatResponseHandler extends ChannelInboundHandlerAdapter {
 
     @Override
     public void userEventTriggered(ChannelHandlerContext ctx, Object evt) throws Exception {
-        log.warn("已经3秒未收到客户端消息");
-        //发送心跳消息
-        byte[] requestByte="heartbeat response".getBytes();
-        ByteBuf requestByteBuf= Unpooled.buffer(requestByte.length);
-        requestByteBuf.writeBytes(requestByte);
+        log.warn("触发userEventTriggered 事件");
+        /*if (evt instanceof IdleStateEvent) {
+            log.warn("已经3秒未收到客户端消息");
+            //发送心跳消息
+            byte[] requestByte = "heartbeat response".getBytes();
+            ByteBuf requestByteBuf = Unpooled.buffer(requestByte.length);
+            requestByteBuf.writeBytes(requestByte);
+            return;
+        }*/
+        super.userEventTriggered(ctx, evt);
     }
 
     @Override

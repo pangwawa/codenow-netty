@@ -17,6 +17,6 @@ public class ClientChannelInitializer extends ChannelInitializer<SocketChannel> 
     protected void initChannel(SocketChannel socketChannel) throws Exception {
         socketChannel.pipeline()
                 .addLast(new HeartBeatRequestHandler())
-                .addLast(new IdleStateHandler(3,0,0, TimeUnit.SECONDS));
+               /* .addLast(new IdleStateHandler(0,4,0, TimeUnit.SECONDS))*/;
     }
 }

@@ -3,6 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/codenow-netty.iml" filepath="$PROJECT_DIR$/.idea/codenow-netty.iml" />
+      <module fileurl="file://$PROJECT_DIR$/netty-heartbeat/heartbeat-client/heartbeat-client.iml" filepath="$PROJECT_DIR$/netty-heartbeat/heartbeat-client/heartbeat-client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/netty-heartbeat/heartbeat-server/heartbeat-server.iml" filepath="$PROJECT_DIR$/netty-heartbeat/heartbeat-server/heartbeat-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/netty-heartbeat/netty-heartbeat.iml" filepath="$PROJECT_DIR$/netty-heartbeat/netty-heartbeat.iml" />
       <module fileurl="file://$PROJECT_DIR$/netty-private-protocol/netty-private-protocol.iml" filepath="$PROJECT_DIR$/netty-private-protocol/netty-private-protocol.iml" />
       <module fileurl="file://$PROJECT_DIR$/netty-socket/netty-socket.iml" filepath="$PROJECT_DIR$/netty-socket/netty-socket.iml" />
     </modules>
