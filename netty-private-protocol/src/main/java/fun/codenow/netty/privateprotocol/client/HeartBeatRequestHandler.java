@@ -1,5 +1,7 @@
 package fun.codenow.netty.privateprotocol.client;
 
+import fun.codenow.netty.privateprotocol.protobuf.CustomMessageProto;
+import fun.codenow.netty.privateprotocol.struct.MessageType;
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.Unpooled;
 import io.netty.channel.ChannelHandlerContext;
@@ -7,11 +9,6 @@ import io.netty.channel.ChannelInboundHandlerAdapter;
 import io.netty.handler.timeout.IdleState;
 import io.netty.handler.timeout.IdleStateEvent;
 import lombok.extern.slf4j.Slf4j;
-
-import java.util.concurrent.ScheduledExecutorService;
-import java.util.concurrent.ScheduledThreadPoolExecutor;
-import java.util.concurrent.ThreadFactory;
-import java.util.concurrent.TimeUnit;
 
 /**
  * @Author Jack Wu
@@ -21,17 +18,6 @@ import java.util.concurrent.TimeUnit;
  **/
 @Slf4j
 public class HeartBeatRequestHandler extends ChannelInboundHandlerAdapter {
-    private static Integer WRITEIDLE =0;
-
-    private final ScheduledExecutorService executorService=new ScheduledThreadPoolExecutor(2, new ThreadFactory() {
-        @Override
-        public Thread newThread(Runnable r) {
-            Thread thread = new Thread(r);
-            thread.setDaemon(true);
-            thread.setName("custom HeartBeat sender");
-            return thread;
-        }
-    });
 
     @Override
     public void channelRegistered(ChannelHandlerContext ctx) throws Exception {
@@ -60,19 +46,11 @@ public class HeartBeatRequestHandler extends ChannelInboundHandlerAdapter {
 
     @Override
     public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {
-        ByteBuf messageBuf= (ByteBuf) msg;
-        byte[] messageByte = new byte[messageBuf.readableBytes()];
-        messageBuf.readBytes(messageByte);
-        String messageStr = new String(messageByte, "UTF-8");
-        if (messageStr.equalsIgnoreCase("heartbeat response")){
-           log.info("心跳消息，{}",messageStr);
-           /*Thread.sleep(3000);
-            byte[] requestByte="heartbeat request".getBytes();
-            ByteBuf requestByteBuf= Unpooled.buffer(requestByte.length);
-            requestByteBuf.writeBytes(requestByte);
-            ctx.writeAndFlush(requestByteBuf);*/
+        CustomMessageProto.CustomMessage message= (CustomMessageProto.CustomMessage) msg;
+        if (message.getHeader().getType().getNumber()== MessageType.PONG.value()){
+            log.info("接收心跳消息：{}",message);
         }else {
-            log.warn("消息未处理：{}",messageStr);
+            log.warn("消息未处理：{}",message);
         }
     }
 
@@ -87,11 +65,15 @@ public class HeartBeatRequestHandler extends ChannelInboundHandlerAdapter {
 
         if (evt instanceof IdleStateEvent){
             IdleStateEvent event= (IdleStateEvent) evt;
-            byte[] requestByte="heartbeat request".getBytes();
-            ByteBuf requestByteBuf= Unpooled.buffer(requestByte.length);
-            requestByteBuf.writeBytes(requestByte);
-            ctx.writeAndFlush(requestByteBuf);
-
+            if (event.state().equals(IdleState.WRITER_IDLE)) {
+                CustomMessageProto.CustomMessage.Builder heartBeatMsg=
+                        CustomMessageProto.CustomMessage.newBuilder().setHeader(
+                                CustomMessageProto.CustomMessage.CustomHeader.newBuilder()
+                                        .setTypeValue(0xABEF)
+                                        .setType(CustomMessageProto.CustomMessage.CustomHeader.MessgeType.PING)
+                        );
+                ctx.channel().writeAndFlush(heartBeatMsg);
+            }
         }
         super.userEventTriggered(ctx, evt);
     }

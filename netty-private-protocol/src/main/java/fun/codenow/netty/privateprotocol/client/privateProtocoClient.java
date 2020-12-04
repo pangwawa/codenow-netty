@@ -28,6 +28,7 @@ public class privateProtocoClient {
             channelFuture.channel().closeFuture().sync();
         } finally {
             eventLoopGroup.shutdownGracefully().sync();
+            //资源释放后，尝试重连
         }
 
     }
