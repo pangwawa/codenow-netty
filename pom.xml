@@ -7,6 +7,7 @@
         <module>netty-socket</module>
         <module>netty-private-protocol</module>
         <module>netty-heartbeat</module>
+        <module>netty-common</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>

@@ -48,6 +48,12 @@
             <groupId>com.google.protobuf</groupId>
             <artifactId>protobuf-java</artifactId>
         </dependency>
+
+        <dependency>
+            <groupId>fun.codenow</groupId>
+            <artifactId>netty-common</artifactId>
+            <version>1.0.0-SNAPSHOT</version>
+        </dependency>
     </dependencies>
 
 </project>

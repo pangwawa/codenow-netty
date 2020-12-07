@@ -9,6 +9,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="heartbeat-server" />
         <module name="netty-socket" />
+        <module name="netty-common" />
         <module name="heartbeat-client" />
         <module name="netty-private-protocol" />
       </profile>
@@ -17,6 +18,7 @@
       <module name="codenow-netty" target="1.8" />
       <module name="heartbeat-client" target="1.8" />
       <module name="heartbeat-server" target="1.8" />
+      <module name="netty-common" target="1.8" />
       <module name="netty-heartbeat" target="1.8" />
       <module name="netty-private-protocol" target="1.8" />
       <module name="netty-socket" target="1.8" />
@@ -26,6 +28,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="heartbeat-client" options="-parameters" />
       <module name="heartbeat-server" options="-parameters" />
+      <module name="netty-common" options="-parameters" />
       <module name="netty-private-protocol" options="-parameters" />
       <module name="netty-socket" options="-parameters" />
     </option>
