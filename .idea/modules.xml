@@ -9,6 +9,7 @@
       <module fileurl="file://$PROJECT_DIR$/netty-heartbeat/netty-heartbeat.iml" filepath="$PROJECT_DIR$/netty-heartbeat/netty-heartbeat.iml" />
       <module fileurl="file://$PROJECT_DIR$/netty-private-protocol/netty-private-protocol.iml" filepath="$PROJECT_DIR$/netty-private-protocol/netty-private-protocol.iml" />
       <module fileurl="file://$PROJECT_DIR$/netty-socket/netty-socket.iml" filepath="$PROJECT_DIR$/netty-socket/netty-socket.iml" />
+      <module fileurl="file://$PROJECT_DIR$/netty-websocket/netty-websocket.iml" filepath="$PROJECT_DIR$/netty-websocket/netty-websocket.iml" />
     </modules>
   </component>
 </project>
