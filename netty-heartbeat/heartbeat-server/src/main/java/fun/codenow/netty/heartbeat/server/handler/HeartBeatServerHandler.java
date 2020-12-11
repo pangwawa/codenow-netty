@@ -1,7 +1,10 @@
 package fun.codenow.netty.heartbeat.server.handler;
 
+import fun.codenow.netty.common.CustomMessageProto;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.ChannelInboundHandlerAdapter;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.stereotype.Component;
 
 /**
  * @Author Jack Wu
@@ -9,6 +12,8 @@ import io.netty.channel.ChannelInboundHandlerAdapter;
  * @Version V1.0
  * @Date2020/12/7 17:56
  **/
+@Slf4j
+@Component
 public class HeartBeatServerHandler extends ChannelInboundHandlerAdapter {
     @Override
     public void channelRegistered(ChannelHandlerContext ctx) throws Exception {
@@ -32,7 +37,19 @@ public class HeartBeatServerHandler extends ChannelInboundHandlerAdapter {
 
     @Override
     public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {
-        super.channelRead(ctx, msg);
+        CustomMessageProto.CustomMessage message= (CustomMessageProto.CustomMessage) msg;
+        if (message.getHeader().getType().getNumber()== CustomMessageProto.CustomMessage.CustomHeader.MessgeType.PING_VALUE){
+            log.info("接收心跳消息：{}",message);
+            CustomMessageProto.CustomMessage.Builder heartBeatRespMsg=CustomMessageProto.CustomMessage.newBuilder()
+                    .setHeader(
+                            CustomMessageProto.CustomMessage.CustomHeader.newBuilder()
+                            .setTypeValue(0xABEF)
+                            .setType(CustomMessageProto.CustomMessage.CustomHeader.MessgeType.PONG)
+                    );
+            ctx.channel().writeAndFlush(heartBeatRespMsg);
+        }else {
+            log.warn("消息未处理：{}",message);
+        }
     }
 
     @Override
@@ -42,6 +59,7 @@ public class HeartBeatServerHandler extends ChannelInboundHandlerAdapter {
 
     @Override
     public void userEventTriggered(ChannelHandlerContext ctx, Object evt) throws Exception {
+        //超过40s没接收心跳消息发送心跳检测
         super.userEventTriggered(ctx, evt);
     }
 
@@ -52,6 +70,7 @@ public class HeartBeatServerHandler extends ChannelInboundHandlerAdapter {
 
     @Override
     public void exceptionCaught(ChannelHandlerContext ctx, Throwable cause) throws Exception {
+        log.error("发生异常，message：{}",cause.getMessage());
         super.exceptionCaught(ctx, cause);
     }
 }

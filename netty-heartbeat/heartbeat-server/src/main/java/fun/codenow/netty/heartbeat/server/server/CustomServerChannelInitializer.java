@@ -1,4 +1,4 @@
-package fun.codenow.netty.heartbeat.server.service;
+package fun.codenow.netty.heartbeat.server.server;
 
 import fun.codenow.netty.common.CustomMessageProto;
 import fun.codenow.netty.heartbeat.server.handler.HeartBeatServerHandler;
@@ -9,6 +9,8 @@ import io.netty.handler.codec.protobuf.ProtobufEncoder;
 import io.netty.handler.codec.protobuf.ProtobufVarint32FrameDecoder;
 import io.netty.handler.codec.protobuf.ProtobufVarint32LengthFieldPrepender;
 import io.netty.handler.timeout.IdleStateHandler;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 import java.util.concurrent.TimeUnit;
 
@@ -18,8 +20,10 @@ import java.util.concurrent.TimeUnit;
  * @Version V1.0
  * @Date2020/12/7 17:47
  **/
-
-public class NettyServerChannelInitializer extends ChannelInitializer<SocketChannel> {
+@Component
+public class CustomServerChannelInitializer extends ChannelInitializer<SocketChannel> {
+    @Autowired
+    HeartBeatServerHandler heartBeatServerHandler;
     @Override
     protected void initChannel(SocketChannel socketChannel) throws Exception {
         socketChannel.pipeline()
@@ -28,6 +32,6 @@ public class NettyServerChannelInitializer extends ChannelInitializer<SocketChan
                 .addLast(new ProtobufDecoder(CustomMessageProto.CustomMessage.getDefaultInstance()))
                 .addLast(new ProtobufVarint32LengthFieldPrepender())
                 .addLast(new ProtobufEncoder())
-                .addLast(new HeartBeatServerHandler());
+                .addLast(heartBeatServerHandler);
     }
 }
