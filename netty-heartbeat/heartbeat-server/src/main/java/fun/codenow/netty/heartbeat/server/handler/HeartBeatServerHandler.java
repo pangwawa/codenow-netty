@@ -3,6 +3,8 @@ package fun.codenow.netty.heartbeat.server.handler;
 import fun.codenow.netty.common.CustomMessageProto;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.ChannelInboundHandlerAdapter;
+import io.netty.handler.timeout.IdleState;
+import io.netty.handler.timeout.IdleStateEvent;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 
@@ -59,7 +61,22 @@ public class HeartBeatServerHandler extends ChannelInboundHandlerAdapter {
 
     @Override
     public void userEventTriggered(ChannelHandlerContext ctx, Object evt) throws Exception {
-        //超过40s没接收心跳消息发送心跳检测
+        //超过40s没接收心跳消息则强制断开连接，从列表移除
+        if (evt instanceof IdleStateEvent){
+            IdleStateEvent event= (IdleStateEvent) evt;
+            if (event.state().equals(IdleState.READER_IDLE)){
+                //判断上一次心跳时间，如果超过40s则直接断开连接
+                //否则尝试发送心跳
+                log.info("已经5秒没有收到客户端心跳消息了，发送心跳检测给客户端");
+                CustomMessageProto.CustomMessage.Builder heartBeatRespMsg=CustomMessageProto.CustomMessage.newBuilder()
+                        .setHeader(
+                                CustomMessageProto.CustomMessage.CustomHeader.newBuilder()
+                                .setTypeValue(0xABEF)
+                                .setType(CustomMessageProto.CustomMessage.CustomHeader.MessgeType.PONG)
+                        );
+                ctx.channel().writeAndFlush(heartBeatRespMsg);
+            }
+        }
         super.userEventTriggered(ctx, evt);
     }
 

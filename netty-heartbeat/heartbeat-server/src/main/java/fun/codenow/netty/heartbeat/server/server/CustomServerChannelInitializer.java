@@ -27,7 +27,7 @@ public class CustomServerChannelInitializer extends ChannelInitializer<SocketCha
     @Override
     protected void initChannel(SocketChannel socketChannel) throws Exception {
         socketChannel.pipeline()
-                .addLast(new IdleStateHandler(10,0,0, TimeUnit.SECONDS))
+                .addLast(new IdleStateHandler(5,0,0, TimeUnit.SECONDS))
                 .addLast(new ProtobufVarint32FrameDecoder())
                 .addLast(new ProtobufDecoder(CustomMessageProto.CustomMessage.getDefaultInstance()))
                 .addLast(new ProtobufVarint32LengthFieldPrepender())

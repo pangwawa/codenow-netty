@@ -1,12 +1,16 @@
 package fun.codenow.netty.heartbeat.client.handler;
 
 import fun.codenow.netty.common.CustomMessageProto;
+import fun.codenow.netty.heartbeat.client.client.Client;
+import io.netty.channel.ChannelHandler;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.ChannelInboundHandlerAdapter;
 import io.netty.handler.timeout.IdleState;
 import io.netty.handler.timeout.IdleStateEvent;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+
 
 /**
  * @Author Jack Wu
@@ -16,7 +20,10 @@ import org.springframework.stereotype.Component;
  **/
 @Slf4j
 @Component
+@ChannelHandler.Sharable
 public class HeartBeatClientHandler extends ChannelInboundHandlerAdapter {
+    @Autowired
+    Client client;
     @Override
     public void channelRegistered(ChannelHandlerContext ctx) throws Exception {
         super.channelRegistered(ctx);
@@ -24,6 +31,12 @@ public class HeartBeatClientHandler extends ChannelInboundHandlerAdapter {
 
     @Override
     public void channelUnregistered(ChannelHandlerContext ctx) throws Exception {
+        //重连
+        try {
+            client.connect();
+        } catch (InterruptedException e) {
+            log.error("连接出现异常，message：{}",e.getMessage());
+        }
         super.channelUnregistered(ctx);
     }
 
@@ -83,6 +96,7 @@ public class HeartBeatClientHandler extends ChannelInboundHandlerAdapter {
 
     @Override
     public void exceptionCaught(ChannelHandlerContext ctx, Throwable cause) throws Exception {
-        super.exceptionCaught(ctx, cause);
+        log.error("程序异常，{}",cause.getMessage());
+        ctx.channel().close();
     }
 }
