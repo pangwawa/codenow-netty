@@ -10,7 +10,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>netty-heartbeat</artifactId>
-    <description>心跳检测、断连重连、消息编解码、握手和安全认证</description>
+    <description>心跳检测、自定义编解码机制，断连重连、握手和安全认证</description>
     <packaging>pom</packaging>
     <modules>
         <module>heartbeat-server</module>
