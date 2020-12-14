@@ -11,6 +11,8 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
+import java.util.concurrent.TimeUnit;
+
 
 /**
  * @Author Jack Wu
@@ -22,6 +24,7 @@ import org.springframework.stereotype.Component;
 @Component
 @ChannelHandler.Sharable
 public class HeartBeatClientHandler extends ChannelInboundHandlerAdapter {
+    private long reconnectTime=5L;
     @Autowired
     Client client;
     @Override
@@ -32,11 +35,16 @@ public class HeartBeatClientHandler extends ChannelInboundHandlerAdapter {
     @Override
     public void channelUnregistered(ChannelHandlerContext ctx) throws Exception {
         //重连
-        try {
-            client.connect();
-        } catch (InterruptedException e) {
-            log.error("连接出现异常，message：{}",e.getMessage());
-        }
+        ctx.channel().eventLoop().schedule(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    client.connect();
+                } catch (InterruptedException e) {
+                    log.error("连接服务端出现异常，message:{}",e.getMessage());
+                }
+            }
+        },reconnectTime, TimeUnit.SECONDS);
         super.channelUnregistered(ctx);
     }
 

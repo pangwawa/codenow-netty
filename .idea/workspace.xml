@@ -5,17 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="58497d24-db89-46ba-94c7-11dba00aacd5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/netty-socket/src/main/java/fun/codenow/netty/socket/uptime/UptimeClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/netty-socket/src/main/java/fun/codenow/netty/socket/uptime/UptimeClientHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/netty-socket/src/main/java/fun/codenow/netty/socket/uptime/UptimeServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/netty-socket/src/main/java/fun/codenow/netty/socket/uptime/UptimeServerHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/netty-heartbeat/heartbeat-client/src/main/java/fun/codenow/netty/heartbeat/client/HeartBeatClientApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/netty-heartbeat/heartbeat-client/src/main/java/fun/codenow/netty/heartbeat/client/HeartBeatClientApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/netty-heartbeat/heartbeat-client/src/main/java/fun/codenow/netty/heartbeat/client/client/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/netty-heartbeat/heartbeat-client/src/main/java/fun/codenow/netty/heartbeat/client/client/Client.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/netty-heartbeat/heartbeat-client/src/main/java/fun/codenow/netty/heartbeat/client/handler/HeartBeatClientHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/netty-heartbeat/heartbeat-client/src/main/java/fun/codenow/netty/heartbeat/client/handler/HeartBeatClientHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/netty-heartbeat/heartbeat-server/src/main/java/fun/codenow/netty/heartbeat/server/handler/HeartBeatServerHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/netty-heartbeat/heartbeat-server/src/main/java/fun/codenow/netty/heartbeat/server/handler/HeartBeatServerHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/netty-heartbeat/heartbeat-server/src/main/java/fun/codenow/netty/heartbeat/server/server/CustomServerChannelInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/netty-heartbeat/heartbeat-server/src/main/java/fun/codenow/netty/heartbeat/server/server/CustomServerChannelInitializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/netty-heartbeat/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/netty-heartbeat/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/netty-socket/target/" />
@@ -39,12 +32,24 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/netty-heartbeat/heartbeat-client/src/main/java/fun/codenow/netty/heartbeat/client/client/Client.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="341">
-              <caret line="69" column="29" selection-start-line="67" selection-start-column="32" selection-end-line="69" selection-end-column="29" />
+            <state relative-caret-position="306">
+              <caret line="68" column="60" selection-start-line="68" selection-start-column="60" selection-end-line="68" selection-end-column="60" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1333#1334#0" expanded="true" />
-                <element signature="e#1384#1385#0" expanded="true" />
+                <element signature="e#1284#1285#0" expanded="true" />
+                <element signature="e#1335#1336#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/netty-private-protocol/src/main/java/fun/codenow/netty/privateprotocol/client/privateProtocoClient.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="30" column="24" lean-forward="true" selection-start-line="30" selection-start-column="24" selection-end-line="30" selection-end-column="24" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -53,8 +58,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/netty-heartbeat/heartbeat-client/src/main/java/fun/codenow/netty/heartbeat/client/handler/HeartBeatClientHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="291">
-              <caret line="36" column="23" selection-start-line="36" selection-start-column="23" selection-end-line="36" selection-end-column="23" />
+            <state relative-caret-position="703">
+              <caret line="100" column="60" selection-start-line="100" selection-start-column="60" selection-end-line="100" selection-end-column="60" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -71,6 +76,18 @@
                 <element signature="imports" expanded="true" />
                 <element signature="e#410#411#0" expanded="true" />
                 <element signature="e#481#482#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/netty-heartbeat/heartbeat-server/src/main/java/fun/codenow/netty/heartbeat/server/handler/HeartBeatServerHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="401">
+              <caret line="95" lean-forward="true" selection-start-line="95" selection-end-line="95" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -177,14 +194,14 @@
         <option value="$PROJECT_DIR$/netty-heartbeat/heartbeat-server/src/main/java/fun/codenow/netty/heartbeat/server/server/Server.java" />
         <option value="$PROJECT_DIR$/netty-heartbeat/heartbeat-server/src/main/java/fun/codenow/netty/heartbeat/server/server/CustomServerChannelInitializer.java" />
         <option value="$PROJECT_DIR$/netty-heartbeat/heartbeat-client/src/main/java/fun/codenow/netty/heartbeat/client/HeartBeatClientApplication.java" />
-        <option value="$PROJECT_DIR$/netty-heartbeat/heartbeat-server/src/main/java/fun/codenow/netty/heartbeat/server/handler/HeartBeatServerHandler.java" />
         <option value="$PROJECT_DIR$/netty-socket/src/main/java/fun/codenow/netty/socket/uptime/UptimeClientHandler.java" />
         <option value="$PROJECT_DIR$/netty-socket/src/main/java/fun/codenow/netty/socket/uptime/UptimeClient.java" />
         <option value="$PROJECT_DIR$/netty-socket/src/main/java/fun/codenow/netty/socket/uptime/UptimeServer.java" />
         <option value="$PROJECT_DIR$/netty-socket/src/main/java/fun/codenow/netty/socket/uptime/UptimeServerHandler.java" />
         <option value="$PROJECT_DIR$/netty-heartbeat/pom.xml" />
-        <option value="$PROJECT_DIR$/netty-heartbeat/heartbeat-client/src/main/java/fun/codenow/netty/heartbeat/client/client/Client.java" />
         <option value="$PROJECT_DIR$/netty-heartbeat/heartbeat-client/src/main/java/fun/codenow/netty/heartbeat/client/handler/HeartBeatClientHandler.java" />
+        <option value="$PROJECT_DIR$/netty-heartbeat/heartbeat-server/src/main/java/fun/codenow/netty/heartbeat/server/handler/HeartBeatServerHandler.java" />
+        <option value="$PROJECT_DIR$/netty-heartbeat/heartbeat-client/src/main/java/fun/codenow/netty/heartbeat/client/client/Client.java" />
       </list>
     </option>
   </component>
@@ -299,38 +316,25 @@
             <path>
               <item name="codenow-netty" type="b2602c69:ProjectViewProjectNode" />
               <item name="codenow-netty" type="462c0819:PsiDirectoryNode" />
-              <item name="netty-heartbeat" type="462c0819:PsiDirectoryNode" />
-              <item name="heartbeat-client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="netty-private-protocol" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="codenow-netty" type="b2602c69:ProjectViewProjectNode" />
               <item name="codenow-netty" type="462c0819:PsiDirectoryNode" />
-              <item name="netty-heartbeat" type="462c0819:PsiDirectoryNode" />
-              <item name="heartbeat-server" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="codenow-netty" type="b2602c69:ProjectViewProjectNode" />
-              <item name="codenow-netty" type="462c0819:PsiDirectoryNode" />
-              <item name="netty-heartbeat" type="462c0819:PsiDirectoryNode" />
-              <item name="heartbeat-server" type="462c0819:PsiDirectoryNode" />
+              <item name="netty-private-protocol" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="codenow-netty" type="b2602c69:ProjectViewProjectNode" />
               <item name="codenow-netty" type="462c0819:PsiDirectoryNode" />
-              <item name="netty-heartbeat" type="462c0819:PsiDirectoryNode" />
-              <item name="heartbeat-server" type="462c0819:PsiDirectoryNode" />
+              <item name="netty-private-protocol" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="codenow-netty" type="b2602c69:ProjectViewProjectNode" />
               <item name="codenow-netty" type="462c0819:PsiDirectoryNode" />
-              <item name="netty-heartbeat" type="462c0819:PsiDirectoryNode" />
-              <item name="heartbeat-server" type="462c0819:PsiDirectoryNode" />
+              <item name="netty-private-protocol" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -338,17 +342,21 @@
             <path>
               <item name="codenow-netty" type="b2602c69:ProjectViewProjectNode" />
               <item name="codenow-netty" type="462c0819:PsiDirectoryNode" />
-              <item name="netty-heartbeat" type="462c0819:PsiDirectoryNode" />
-              <item name="heartbeat-server" type="462c0819:PsiDirectoryNode" />
+              <item name="netty-private-protocol" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="privateprotocol" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="codenow-netty" type="b2602c69:ProjectViewProjectNode" />
               <item name="codenow-netty" type="462c0819:PsiDirectoryNode" />
-              <item name="netty-websocket" type="462c0819:PsiDirectoryNode" />
+              <item name="netty-private-protocol" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="privateprotocol" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -484,8 +492,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.HeartBeatServerApplication" />
         <item itemvalue="Spring Boot.HeartBeatClientApplication" />
+        <item itemvalue="Spring Boot.HeartBeatServerApplication" />
         <item itemvalue="Application.UptimeServer" />
         <item itemvalue="Application.UptimeClient" />
         <item itemvalue="Application.WebSocketServer" />
@@ -516,18 +524,19 @@
       <workItem from="1607476622146" duration="2420000" />
       <workItem from="1607562614211" duration="2754000" />
       <workItem from="1607648917294" duration="11706000" />
-      <workItem from="1607913585626" duration="11825000" />
+      <workItem from="1607913585626" duration="14168000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="163813000" />
+    <option name="totallyTimeSpent" value="166156000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.8238434" visible="true" weight="0.21321961" />
-      <window_info id="Structure" order="1" sideWeight="0.17615658" side_tool="true" visible="true" weight="0.21321961" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.82300884" visible="true" weight="0.21321961" />
+      <window_info id="Structure" order="1" sideWeight="0.17699115" side_tool="true" visible="true" weight="0.21321961" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Capture Tool" order="4" />
@@ -536,7 +545,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.329718" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.39045554" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.38720173" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3991323" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -783,13 +792,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/netty-private-protocol/src/main/java/fun/codenow/netty/privateprotocol/client/privateProtocoClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-17">
-          <caret line="5" column="46" lean-forward="true" selection-start-line="5" selection-start-column="46" selection-end-line="5" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/netty-common/src/main/java/fun/codenow/netty/common/codec/CustomEncode.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
@@ -857,16 +859,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="570">
           <caret line="36" column="1" lean-forward="true" selection-start-line="36" selection-start-column="1" selection-end-line="36" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/netty-heartbeat/heartbeat-server/src/main/java/fun/codenow/netty/heartbeat/server/handler/HeartBeatServerHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="87" column="13" lean-forward="true" selection-start-line="87" selection-start-column="13" selection-end-line="87" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -958,10 +950,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/netty-heartbeat/heartbeat-server/src/main/java/fun/codenow/netty/heartbeat/server/handler/HeartBeatServerHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="401">
+          <caret line="95" lean-forward="true" selection-start-line="95" selection-end-line="95" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/netty-heartbeat/heartbeat-client/src/main/java/fun/codenow/netty/heartbeat/client/handler/HeartBeatClientHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="36" column="23" selection-start-line="36" selection-start-column="23" selection-end-line="36" selection-end-column="23" />
+        <state relative-caret-position="703">
+          <caret line="100" column="60" selection-start-line="100" selection-start-column="60" selection-end-line="100" selection-end-column="60" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/netty-private-protocol/src/main/java/fun/codenow/netty/privateprotocol/client/privateProtocoClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="30" column="24" lean-forward="true" selection-start-line="30" selection-start-column="24" selection-end-line="30" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -970,12 +982,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/netty-heartbeat/heartbeat-client/src/main/java/fun/codenow/netty/heartbeat/client/client/Client.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="69" column="29" selection-start-line="67" selection-start-column="32" selection-end-line="69" selection-end-column="29" />
+        <state relative-caret-position="306">
+          <caret line="68" column="60" selection-start-line="68" selection-start-column="60" selection-end-line="68" selection-end-column="60" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1333#1334#0" expanded="true" />
-            <element signature="e#1384#1385#0" expanded="true" />
+            <element signature="e#1284#1285#0" expanded="true" />
+            <element signature="e#1335#1336#0" expanded="true" />
           </folding>
         </state>
       </provider>

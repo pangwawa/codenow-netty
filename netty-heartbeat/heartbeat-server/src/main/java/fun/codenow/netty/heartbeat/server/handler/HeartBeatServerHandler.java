@@ -1,6 +1,7 @@
 package fun.codenow.netty.heartbeat.server.handler;
 
 import fun.codenow.netty.common.CustomMessageProto;
+import io.netty.channel.ChannelHandler;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.ChannelInboundHandlerAdapter;
 import io.netty.handler.timeout.IdleState;
@@ -16,6 +17,7 @@ import org.springframework.stereotype.Component;
  **/
 @Slf4j
 @Component
+@ChannelHandler.Sharable
 public class HeartBeatServerHandler extends ChannelInboundHandlerAdapter {
     @Override
     public void channelRegistered(ChannelHandlerContext ctx) throws Exception {

@@ -26,7 +26,6 @@ public class Client {
     private NioEventLoopGroup eventLoopGroup;
     private Bootstrap bootstrap;
     public Channel channel;
-    private long reconnectTime=5L;
     private String serverAddr="192.168.5.93";
     private int port=8983;
     @Autowired
@@ -61,24 +60,12 @@ public class Client {
                     channel=channelFuture.channel();
                     log.info("服务器启动成功");
                 }else {
-                    channelFuture.channel().eventLoop().schedule(new Runnable() {
-                        @Override
-                        public void run() {
-                            log.error("服务器启动失败，正在进行重连……");
-                            try {
-                                connect();
-                            } catch (InterruptedException e) {
-                                log.error("连接出现异常，message：{}",e.getMessage());
-                            } finally {
-                                try {
-                                    channel.close().sync();
-                                    eventLoopGroup.shutdownGracefully().sync();
-                                } catch (InterruptedException e) {
-                                    log.error("连接出现异常，message：{}",e.getMessage());
-                                }
-                            }
-                        }
-                    },reconnectTime, TimeUnit.SECONDS);
+                    log.error("服务器启动失败，正在进行重连……");
+                    try {
+                        connect();
+                    } catch (InterruptedException e) {
+                        log.error("连接出现异常，message：{}",e.getMessage());
+                    }
                 }
             }
         });
