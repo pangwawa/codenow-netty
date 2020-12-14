@@ -7,7 +7,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="netty-socket" />
+        <module name="netty-demo" />
         <module name="netty-websocket" />
         <module name="heartbeat-client" />
         <module name="heartbeat-server" />
@@ -20,9 +20,9 @@
       <module name="heartbeat-client" target="1.8" />
       <module name="heartbeat-server" target="1.8" />
       <module name="netty-common" target="1.8" />
+      <module name="netty-demo" target="1.8" />
       <module name="netty-heartbeat" target="1.8" />
       <module name="netty-private-protocol" target="1.8" />
-      <module name="netty-socket" target="1.8" />
       <module name="netty-websocket" target="1.8" />
     </bytecodeTargetLevel>
   </component>
@@ -31,8 +31,8 @@
       <module name="heartbeat-client" options="-parameters" />
       <module name="heartbeat-server" options="-parameters" />
       <module name="netty-common" options="-parameters" />
+      <module name="netty-demo" options="-parameters" />
       <module name="netty-private-protocol" options="-parameters" />
-      <module name="netty-socket" options="-parameters" />
       <module name="netty-websocket" options="-parameters" />
     </option>
   </component>

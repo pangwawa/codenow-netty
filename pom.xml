@@ -4,11 +4,14 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <modules>
-        <module>netty-socket</module>
+        <module>netty-demo</module>
         <module>netty-private-protocol</module>
         <module>netty-heartbeat</module>
         <module>netty-common</module>
         <module>netty-websocket</module>
+        <module>codenow-im-chat</module>
+        <module>codenow-rpc</module>
+        <module>netty-file-system</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
