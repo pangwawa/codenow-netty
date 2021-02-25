@@ -12,6 +12,7 @@
         <module>codenow-im-chat</module>
         <module>codenow-rpc</module>
         <module>netty-file-system</module>
+        <module>java-network-programming</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
