@@ -13,6 +13,7 @@
         <module>codenow-rpc</module>
         <module>netty-file-system</module>
         <module>java-network-programming</module>
+        <module>netty-boot</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>

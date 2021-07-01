@@ -37,7 +37,6 @@ public class Server {
             ChannelFuture channelFuture=serverBootstrap.bind().sync();
             channelFuture.channel().closeFuture().sync();
             //服务端监控客户端连接是否健康，定期进行健康检查
-
     }
     @PreDestroy
     public void destroy(){

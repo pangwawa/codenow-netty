@@ -26,8 +26,8 @@ public class Client {
     private NioEventLoopGroup eventLoopGroup;
     private Bootstrap bootstrap;
     public Channel channel;
-    private String serverAddr="192.168.5.93";
-    private int port=8983;
+    private String serverAddr="localhost";
+    private int port=8888;
     @Autowired
     CustomClientChannelInitializer customClientChannelInitializer;
     @PostConstruct
